@@ -1,10 +1,10 @@
 # LDA Topic Modeling and Bayesian Optimization
 
-This repository contains the complete pipeline for tuning a Latent Dirichlet Allocation (LDA) topic model using Bayesian optimization, applied to the 20 Newsgroups dataset. The primary workflow and all associated code are located in the file `lda_20newsgroups_bayesian_v2.ipynb`.
+This repository contains the complete pipeline for tuning a Latent Dirichlet Allocation (LDA) topic model using Bayesian optimization, applied to the 20 Newsgroups dataset. The primary workflow and all associated code are located in the file `lda_20newsgroups_v3.ipynb`.
 
 ## Overview
 
-Hyperparameter tuning for LDA is computationally expensive, with a standard fit on the full 18,000-document 20 Newsgroups corpus taking up to 413 seconds per evaluation. The provided notebook, `lda_20newsgroups_bayesian_v2.ipynb`, implements a fast-track search strategy that reduces evaluation time to approximately 15 seconds. After 30 Bayesian evaluations, the optimal parameters are used to train a final model on the entire dataset, maximizing the $C_v$ coherence score.
+Hyperparameter tuning for LDA is computationally expensive, with a standard fit on the full 18,000-document 20 Newsgroups corpus taking up to 413 seconds per evaluation. The provided notebook, `lda_20newsgroups_v3.ipynb`, implements a fast-track search strategy that reduces evaluation time to approximately 15 seconds. After 30 Bayesian evaluations, the optimal parameters are used to train a final model on the entire dataset, maximizing the $C_v$ coherence score.
 
 ## Speed and Optimization Strategy
 
